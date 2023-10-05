@@ -1,0 +1,32 @@
+﻿@{
+    ViewData["Title"] = "Formulario";
+}
+
+<div class="text-center">
+    <form id="form" method="post">
+        <ul>
+            <li>
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+                <label for="lastn">Apellido:</label>
+                <input type="text" id="lastn" name="user_name" />
+            </li>
+            <li>
+                <label for="mail">Correo:</label>
+                <input type="email" id="mail" name="user_name" />
+            </li>
+            <li>
+                <label for="msg">Mensaje:</label>
+                <input type="text" id="msg" name="user_name" />
+            </li>
+
+            <button type="button" id="btnAlerta" >Imprimir Alerta</button>
+
+        </ul>
+    </form>
+</div>
+@section Scripts {
+    <script type="text/javascript" src="~/js/alerta.js"></script>
+}
